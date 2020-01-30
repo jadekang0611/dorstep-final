@@ -1,0 +1,53 @@
+.question-main {
+  padding-top: 80px;
+  font-size: 36px;
+  letter-spacing: 0.25rem;
+  justify-content: center;
+  color: #6610f2;
+}
+.explanation {
+  padding-top: 15px;
+  color: #6c757d;
+  font-size: 16px;
+  justify-content: center;
+}
+
+.card-deck {
+  justify-content: center;
+  margin-bottom: 40px;
+  /* flex-flow: nowrap; */
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+  .cardStyle {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 576px) {
+  .card-deck {
+    margin-bottom: 0px;
+  }
+}
+
+.cardStyle:hover {
+  border: 1px solid #6610f2;
+}
+
+.card-title {
+  text-align: center;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #62cffd;
+}

@@ -1,0 +1,46 @@
+.brand {
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-right: 1rem;
+  white-space: nowrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 28px;
+}
+
+.nav-bar {
+  list-style: none;
+  display: flex;
+  color: #6610f2;
+}
+
+.nav-item {
+  color: #6610f2;
+  font-size: 25px;}
+
+.nav-item:hover {
+  color: white !important;
+  font-size: 25px;
+  border: 1px solid #6610f2;
+  border-radius: 1.25rem;
+  background-color: #6610f2;
+  opacity: 0.7;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #6610f2;
+}
+
+.mr-auto {
+  margin-right: 0 !important;
+  margin-left: auto;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+link {
+  
+}
