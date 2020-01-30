@@ -47,7 +47,7 @@ async function geocode(address, place) {
   var url =
     'https://naveropenapi.apigw.ntruss.com/map-geocode/v2/geocode?query=' +
     adr +
-    '&X-NCP-APIGW-API-KEY-ID=2cjjmuz99d&X-NCP-APIGW-API-KEY=AdOeRdhVQOCJ7590scFL1bDsQGuUbCCHk8SdYFHP';
+    `&X-NCP-APIGW-API-KEY-ID=${process.env.REACT_APP_API_KEY_ID}&X-NCP-APIGW-API-KEY=${process.env.REACT_APP_API_KEY}`;
   var request = new Request(url);
   await fetch(request)
     .then(function(response) {
@@ -97,14 +97,7 @@ function PropertyModalScreen(props) {
                 <Row className="content-container-modal">
                   <Container>
                     <Row>
-                      <NaverMap
-                        clientId="2cjjmuz99d"
-                        ncp // 네이버 클라우드 플랫폼 사용여부
-                        style={{ width: '350px', height: '350px' }}
-                        initialPosition={{ lat: 37.5332983, lng: 126.9951957 }}
-                        initialZoom={8}
-                        submodules={['drawing', 'geocoder']}
-                      />
+                      <img src="../images/seoul.png" alt="seoul" />
                     </Row>
                   </Container>
                 </Row>
